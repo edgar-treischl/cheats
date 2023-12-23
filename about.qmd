@@ -1,9 +1,29 @@
 ---
-title: "About"
+title: "forcats"
 ---
 
-About this site
+<img src="https://forcats.tidyverse.org/logo.png" alt="Copy Cat - Edgar Treischl" align="right" width="225"/>
+
+R represents categorical data with factors. A factor is an integer vector with a levels attribute that stores a set of mappings between integers and categorical values. When you view a factor, R displays not the integers but the levels associated with them.
+
+Create a factor with `factor()`
 
 ```{r}
-1 + 1
+library(forcats)
+f <- factor(c("a", "c", "b", "a"), levels = c("a", "b", "c"))
 ```
+
+Return its levels with `levels()`:
+
+```{r}
+levels(f)
+```
+
+## Inspect Factors
+
+
+```{r}
+fct_count(f, sort = FALSE, prop = FALSE) 
+```
+
+

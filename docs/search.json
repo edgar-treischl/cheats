@@ -9,8 +9,15 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "forcats",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "R represents categorical data with factors. A factor is an integer vector with a levels attribute that stores a set of mappings between integers and categorical values. When you view a factor, R displays not the integers but the levels associated with them.\nCreate a factor with factor()\nReturn its levels with levels():"
+  },
+  {
+    "objectID": "about.html#inspect-factors",
+    "href": "about.html#inspect-factors",
+    "title": "forcats",
+    "section": "Inspect Factors",
+    "text": "Inspect Factors\n\nfct_count(f, sort = FALSE, prop = FALSE) \n\n# A tibble: 3 × 2\n  f         n\n  <fct> <int>\n1 a         2\n2 b         1\n3 c         1"
   }
 ]
